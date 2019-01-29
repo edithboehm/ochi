@@ -6,7 +6,10 @@
 \include "cajon.ly"
 
 #(set-accidental-style 'modern-cautionary)
-\transpose c' es % g moll
+\transpose c' es % g moll Version 1 (tief)
+%\transpose c' f % a moll Version 1,5
+%\transpose c' as % c moll Version 2, vom fis startend
+%\transpose c' b% d moll Version 3, vom gis startend
 \new StaffGroup <<
 		\time 4/4
 		\new ChordNames \chordsfour
@@ -56,7 +59,10 @@
     \Staff \RemoveEmptyStaves
   }
 }
-\transpose c' es % g moll
+\transpose c' es % g moll Version 1 (tief)
+%\transpose c' f % a moll Version 1,5
+%\transpose c' as % c moll Version 2, vom fis startend
+%\transpose c' b% d moll Version 3, vom gis startend
 \new StaffGroup <<
 	\new ChordNames \chordsfour
 	\new Staff {
@@ -78,7 +84,10 @@ intermediatechords = \chordmode {
 	fis1:7 | cis:7 | fis:9
 }
 
-\transpose c' g' {% g moll
+\transpose c' g'% Version 1 (tief)
+%\transpose c' a % Version 1,5
+%\transpose c' c'% Version 2, vom fis startend
+\transpose c' d'% Version 3, vom gis startend
 	\new StaffGroup <<
 		\new ChordNames \chordmode {  \intermediatechords }
 		\new Staff {
@@ -86,11 +95,11 @@ intermediatechords = \chordmode {
 			\makeClusters { <c b>2 <f b'>}
 		}
 	>>
-}
 
-%\transpose c' es' {% g moll
-\transpose c' f {% a moll
-
+\transpose c' f % a moll Version 1 (tief)
+%\transpose c' g % h moll Version 1,5
+%\transpose c' b% d moll Version 2, vom fis startend
+%\transpose c' c'% Version 3, vom gis startend
 \new StaffGroup <<
 	\time 3/4
 	\new ChordNames \chordsthree
@@ -111,4 +120,4 @@ intermediatechords = \chordmode {
 
 	%\new Staff \bassthree
 >>
-}
+
